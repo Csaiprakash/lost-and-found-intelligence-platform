@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Csaiprakash/lost-and-found-intelligence-platform-config.git
+          username: ${GIT_USERNAME}
+          password: ${GIT_PASSWORD}
+          default-label: main
+server:
+  port: 8888
